@@ -1,0 +1,15 @@
+{
+  "name": "FTPServer",
+  "version": "1.0.0",
+  "description": "Lightweight, robust FTP Server for ESP8266 and ESP32 with LittleFS / SPIFFS / SD support",
+  "keywords": "ftp, ftpserver, esp8266, esp32, esp32-c3, littlefs, spiffs, sd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SerhiiLe/FTPServer"
+  },
+  "license": "LGPL-3.0-or-later",
+  "frameworks": "arduino",
+  "platforms": ["espressif8266", "espressif32"],
+  "headers": "FTPServer.h",
+  "examples": "examples/*/*.ino"
+}
