@@ -56,6 +56,31 @@ The library is designed around a single-threaded, non-blocking finite state mach
 
 ---
 
+## Installation
+
+### PlatformIO
+Add the repository to your project's `platformio.ini` in the `lib_deps` section:
+```ini
+[env:my_board]
+lib_deps =
+    https://github.com/SerhiiLe/FTPServer.git
+```
+Or simply copy the `FTPServer` folder into your project's local `lib/` directory.
+
+### Arduino IDE
+1. Download the repository as a ZIP archive: [FTPServer.zip](https://github.com/SerhiiLe/FTPServer/archive/refs/heads/master.zip).
+2. In the Arduino IDE, navigate to: **Sketch** -> **Include Library** -> **Add .ZIP Library...** and select the downloaded archive.
+3. Alternatively, clone the repository directly into your Arduino libraries directory:
+   ```bash
+   cd ~/Arduino/libraries  # or Documents/Arduino/libraries on Windows
+   git clone https://github.com/SerhiiLe/FTPServer.git
+   ```
+
+### Dependencies
+The library is completely self-contained and requires no external third-party dependencies. It uses only standard Arduino core components for ESP8266 and ESP32 (`WiFi`, `FS`, `LittleFS`).
+
+---
+
 ## API Reference
 
 ### Constructor

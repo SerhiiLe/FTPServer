@@ -56,6 +56,31 @@
 
 ---
 
+## Установка
+
+### PlatformIO
+Добавьте репозиторий в файл `platformio.ini` вашего проекта в секцию `lib_deps`:
+```ini
+[env:my_board]
+lib_deps =
+    https://github.com/SerhiiLe/FTPServer.git
+```
+Или просто скопируйте папку `FTPServer` в локальную директорию `lib/` вашего проекта.
+
+### Arduino IDE
+1. Скачайте репозиторий в виде архива: [FTPServer.zip](https://github.com/SerhiiLe/FTPServer/archive/refs/heads/master.zip).
+2. В Arduino IDE перейдите в меню: **Скетч** -> **Подключить библиотеку** -> **Добавить .ZIP библиотеку...** и выберите скачанный файл.
+3. Либо клонируйте репозиторий напрямую в каталог библиотек:
+   ```bash
+   cd ~/Arduino/libraries  # или Документы/Arduino/libraries в Windows
+   git clone https://github.com/SerhiiLe/FTPServer.git
+   ```
+
+### Зависимости
+Библиотека полностью самодостаточна и не требует внешних сторонних библиотек. Используются только стандартные компоненты ядра Arduino для ESP8266 и ESP32 (`WiFi`, `FS`, `LittleFS`).
+
+---
+
 ## Описание методов API
 
 ### Конструктор
